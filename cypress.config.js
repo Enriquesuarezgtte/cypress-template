@@ -21,5 +21,5 @@ module.exports = defineConfig({
         runMode: 1,
         openMode: 1
     },
-    watchForFileChanges: true
+    watchForFileChanges: false
 });
