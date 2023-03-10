@@ -4,7 +4,7 @@
     "description": "Cypress 12 Template",
     "main": "index.js",
     "scripts": {
-        "test": "cypress run",
+        "test": "cypress open",
         "lint": "npx eslint src test",
         "lint:fix": "npm run lint -- --fix",
         "prettier": "npx prettier 5 test --check",
