@@ -17,7 +17,7 @@ class CheckoutPage {
     }
 
     assertOrderProcessed(expectedText) {
-        this.elements.productQuantityCart().should('include.text', expectedText).screenshot();
+        this.elements.orderResult().should('include.text', expectedText).screenshot();
     }
 }
 
