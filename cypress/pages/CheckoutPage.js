@@ -13,7 +13,7 @@ class CheckoutPage {
         this.elements.continueDeliveryInformation().click();
         this.elements.cashOnDeliveryPayment().click();
         this.elements.continuePayment().click();
-        this.elements.confirmOrder().click();
+        this.elements.confirmOrder().click(); 
     }
 
     assertOrderProcessed(expectedText) {
