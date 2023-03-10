@@ -13,14 +13,14 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/xescuder/cypress-template.git"
+        "url": "git+https://github.com/enriquesuarezgtte/cypress-template.git"
     },
     "author": "Xavier Escudero",
     "license": "ISC",
     "bugs": {
-        "url": "https://github.com/xescuder/cypress-template/issues"
+        "url": "https://github.com/enriquesuarezgtte/cypress-template/issues"
     },
-    "homepage": "https://github.com/xescuder/cypress-template#readme",
+    "homepage": "https://github.com/enriquesuarezgtte/cypress-template#readme",
     "devDependencies": {
         "cypress": "^12.4.1",
         "cypress-mochawesome-reporter": "^3.2.3",
@@ -32,5 +32,19 @@
         "lint-staged": "^13.1.0",
         "prettier": "2.8.3",
         "simple-git-hooks": "^2.8.1"
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "lint-staged"
+        }
+    },
+    "lint-staged": {
+        "*.js": [
+            "prettier --write",
+            "git add"
+        ]
+    },
+    "simple-git-hooks": {
+        "pre-push": "npm run test"
     }
 }
